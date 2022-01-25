@@ -1,3 +1,4 @@
 # Demirbas Takip Programi
 
-Kullanımı basit, arayüzü basit kullanıcı dostu geliştirilmeye açık demirbaş takip otomasyonu.
+Temel SQL sorgularını öğrenebileceğiniz, C# veri işlemlerini öğrenebileceğiniz ufak çaplı program.
+Demo kullanıcı adı ve şifresi:root, 123456
