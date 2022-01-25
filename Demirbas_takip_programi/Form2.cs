@@ -53,7 +53,6 @@ namespace Demirbas_takip_programi
 
         private void btn_KayitEkle_Click(object sender, EventArgs e)
         {
-            
             if (demirbasno.Text != "" && urunisim.Text != "" && urunadet.Text != "" && urunno.Text != "")
             {
                 cmd.Connection = baglanti;

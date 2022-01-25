@@ -28,10 +28,7 @@ namespace Demirbas_takip_programi
             Form2 f2 = new Form2();
             f2.Show();
         }
-        void kapat()
-        {
-            Close();
-        }
+        
         void giris()
         {
             da = new OleDbDataAdapter("SELECT * FROM kullanicilar", baglanti);
@@ -43,7 +40,7 @@ namespace Demirbas_takip_programi
             {
                 ac();
                 if(Form1.ActiveForm == null)
-                kapat();
+                Close();
             }
             else
             {

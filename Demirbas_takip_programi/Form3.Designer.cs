@@ -40,15 +40,14 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.kullaniciadiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kullanicisifreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uykDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kullanicilarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.demirbasDataSet1 = new Demirbas_takip_programi.demirbasDataSet();
             this.demirbasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.demirbasTableAdapter = new Demirbas_takip_programi.demirbasDataSetTableAdapters.demirbasTableAdapter();
             this.kullanicilarTableAdapter = new Demirbas_takip_programi.demirbasDataSetTableAdapters.kullanicilarTableAdapter();
-            this.kullaniciadiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kullanicisifreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uykDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kullanicilarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.demirbasDataSet1)).BeginInit();
@@ -59,7 +58,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(161, 191);
+            this.button1.Location = new System.Drawing.Point(157, 177);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 28);
             this.button1.TabIndex = 0;
@@ -167,29 +166,6 @@
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.Visible = false;
             // 
-            // kullanicilarBindingSource
-            // 
-            this.kullanicilarBindingSource.DataMember = "kullanicilar";
-            this.kullanicilarBindingSource.DataSource = this.demirbasDataSet1;
-            // 
-            // demirbasDataSet1
-            // 
-            this.demirbasDataSet1.DataSetName = "demirbasDataSet";
-            this.demirbasDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // demirbasBindingSource
-            // 
-            this.demirbasBindingSource.DataMember = "demirbas";
-            this.demirbasBindingSource.DataSource = this.demirbasDataSet1;
-            // 
-            // demirbasTableAdapter
-            // 
-            this.demirbasTableAdapter.ClearBeforeFill = true;
-            // 
-            // kullanicilarTableAdapter
-            // 
-            this.kullanicilarTableAdapter.ClearBeforeFill = true;
-            // 
             // kullaniciadiDataGridViewTextBoxColumn
             // 
             this.kullaniciadiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -214,16 +190,28 @@
             this.uykDataGridViewTextBoxColumn.Name = "uykDataGridViewTextBoxColumn";
             this.uykDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // checkBox1
+            // kullanicilarBindingSource
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.checkBox1.Location = new System.Drawing.Point(161, 163);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(86, 22);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "Üst Yetki";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.kullanicilarBindingSource.DataMember = "kullanicilar";
+            this.kullanicilarBindingSource.DataSource = this.demirbasDataSet1;
+            // 
+            // demirbasDataSet1
+            // 
+            this.demirbasDataSet1.DataSetName = "demirbasDataSet";
+            this.demirbasDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // demirbasBindingSource
+            // 
+            this.demirbasBindingSource.DataMember = "demirbas";
+            this.demirbasBindingSource.DataSource = this.demirbasDataSet1;
+            // 
+            // demirbasTableAdapter
+            // 
+            this.demirbasTableAdapter.ClearBeforeFill = true;
+            // 
+            // kullanicilarTableAdapter
+            // 
+            this.kullanicilarTableAdapter.ClearBeforeFill = true;
             // 
             // Form3
             // 
@@ -232,7 +220,6 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(783, 384);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox3);
@@ -278,6 +265,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn kullaniciadiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kullanicisifreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn uykDataGridViewTextBoxColumn;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

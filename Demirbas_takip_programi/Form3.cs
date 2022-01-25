@@ -32,7 +32,7 @@ namespace Demirbas_takip_programi
                 da = new OleDbDataAdapter("SELECT * FROM kullanicilar", baglanti);
                 baglanti.Open();
                 cmd.Connection = baglanti;
-                cmd.CommandText = "INSERT INTO kullanicilar (kullanici_adi, kullanici_sifre,uyk) VALUES ('"+textBox1.Text+"', '"+textBox2.Text+"')";
+                cmd.CommandText = "INSERT INTO kullanicilar (kullanici_adi, kullanici_sifre) VALUES ('"+textBox1.Text+"', '"+textBox2.Text+"')";
                 dr = cmd.ExecuteReader();
                 baglanti.Close();
                 MessageBox.Show("Kullanıcı başarıyla eklendi!");
